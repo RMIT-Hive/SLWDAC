@@ -112,17 +112,11 @@ while(!status)
 void EEPROM_Write_Event(uint8_t addr_offset_pressure, float pressure, uint8_t addr_offset_temperature, float temperature , uint8_t addr_offset_time, float time)
 {
   EEPROM.put(addr_offset_pressure, pressure);
-  Serial.print("\n temporary testing PUT: ");
   Serial.print(pressure);
-  Serial.print("\n ");
   EEPROM.put(addr_offset_temperature, temperature);
-  Serial.print("\n temporary testing PUT: ");
   Serial.print(temperature);
-  Serial.print("\n ");
   EEPROM.put(addr_offset_time, time);
-  Serial.print("\n temporary testing PUT: ");
   Serial.print(time);
-  Serial.print("\n ");
 }
 
 void extract_eeprom_GET(float apogee_event[4]) 
