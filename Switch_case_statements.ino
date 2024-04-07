@@ -27,7 +27,7 @@ void loop()
       case 4:
       Serial.print("\n Choice three was selected. You want to read the highest altitude. \n");
       break;
-4
+
       default: 
       Serial.print("\n Do you want to read either pressure(1), temperature(2), the time(3) or the altitude(4) at apogee? \n");
       break;
